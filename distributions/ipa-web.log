@@ -1,0 +1,217 @@
+21:08:44.419 [main] INFO  Starting Application v0.1.0 on DESKTOP-OPIFQEK with PID 7692 (C:\Study\IPA\ipaca-master\distributions\ipa-web-0.1.0.jar started by Francis in C:\Study\IPA\ipaca-master\distributions)
+21:08:44.423 [main] INFO  No active profile set, falling back to default profiles: default
+21:08:44.466 [main] INFO  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f40c25: startup date [Mon Apr 13 21:08:44 SGT 2020]; root of context hierarchy
+21:08:45.668 [main] INFO  Tomcat initialized with port(s): 8090 (http)
+21:08:45.680 [main] INFO  Initializing ProtocolHandler ["http-nio-8090"]
+21:08:45.694 [main] INFO  Starting service [Tomcat]
+21:08:45.694 [main] INFO  Starting Servlet Engine: Apache Tomcat/8.5.34
+21:08:45.712 [localhost-startStop-1] INFO  The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\libnvvp;C:\Users\Francis.DESKTOP-OPIFQEK\Downloads\amazon-corretto-11.0.6.10.1-1-windows-x64-jdk\jdk11.0.6_10\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Apps\Oracle\db_home\bin;C:\Apps\Oracle\client_home\bin;C:\WINDOWS.X64_193000_client_home\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\libnvvp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.4.0\;C:\Users\Francis.DESKTOP-OPIFQEK\Downloads\amazon-corretto-11.0.6.10.1-1-windows-x64-jdk\jdk11.0.6_10\bin;C:\Open_JDK-13.0.2\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Francis.DESKTOP-OPIFQEK\AppData\Local\Microsoft\WindowsApps;C:\Apps\Oracle\db_home;C:\Users\Francis.DESKTOP-OPIFQEK\Anaconda3\bin;C:\Users\Francis.DESKTOP-OPIFQEK\Anaconda3\Scripts;C:\Users\Francis.DESKTOP-OPIFQEK\Anaconda3\Library\bin;C:\Users\Francis.DESKTOP-OPIFQEK\AppData\Roaming\Python\Python37\Scripts;C:\Users\Francis.DESKTOP-OPIFQEK\AppData\Local\GitHubDesktop\bin;.]
+21:08:45.783 [localhost-startStop-1] INFO  Initializing Spring embedded WebApplicationContext
+21:08:45.783 [localhost-startStop-1] INFO  Root WebApplicationContext: initialization completed in 1318 ms
+21:08:45.814 [localhost-startStop-1] INFO  Servlet dispatcherServlet mapped to [/]
+21:08:45.817 [localhost-startStop-1] INFO  Mapping filter: 'characterEncodingFilter' to: [/*]
+21:08:45.927 [main] INFO  Mapped "{[/go_to_matching],methods=[GET]}" onto public java.lang.String ipa.RequestController.goToMatching(org.springframework.ui.Model) throws java.lang.Exception
+21:08:45.929 [main] INFO  Mapped "{[/start_loading],methods=[GET]}" onto public java.lang.String ipa.RequestController.startLoading(org.springframework.ui.Model) throws java.lang.Exception
+21:08:45.930 [main] INFO  Mapped "{[/start_loadingNew],methods=[GET]}" onto public java.lang.String ipa.RequestController.startLoadingNew(org.springframework.ui.Model) throws java.lang.Exception
+21:08:45.937 [main] INFO  Mapped "{[/showResults],methods=[GET]}" onto public java.lang.String ipa.RequestController.matchingComplete(org.springframework.ui.Model) throws java.lang.Exception
+21:08:45.938 [main] INFO  Mapped "{[/show_patients],methods=[GET]}" onto public java.lang.String ipa.RequestController.showPatients(org.springframework.ui.Model) throws java.lang.Exception
+21:08:45.940 [main] INFO  Mapped "{[/stop_process],methods=[GET]}" onto public java.lang.String ipa.RequestController.stopProcess(org.springframework.ui.Model)
+21:08:45.940 [main] INFO  Mapped "{[/start_process],methods=[GET]}" onto public java.lang.String ipa.RequestController.startProcess(org.springframework.ui.Model)
+21:08:45.943 [main] INFO  Mapped "{[/submit_employee],methods=[POST]}" onto public java.lang.String ipa.RequestController.submitEmployee(ipa.dto.EmployeeDto,org.springframework.ui.Model)
+21:08:45.943 [main] INFO  Mapped "{[/go_to_details_input],methods=[GET]}" onto public java.lang.String ipa.RequestController.goToDetailsInput(java.lang.String,org.springframework.ui.Model)
+21:08:45.943 [main] INFO  Mapped "{[/submit],methods=[POST]}" onto public java.lang.String ipa.RequestController.submit11(org.springframework.ui.Model)
+21:08:45.944 [main] INFO  Mapped "{[/]}" onto public java.lang.String ipa.RequestController.welcome()
+21:08:45.944 [main] INFO  Mapped "{[/backToMain],methods=[GET]}" onto public java.lang.String ipa.RequestController.goToMain() throws java.lang.Exception
+21:08:45.945 [main] INFO  Mapped "{[/show_practitioners],methods=[GET]}" onto public java.lang.String ipa.RequestController.showPractitioners(org.springframework.ui.Model) throws java.lang.Exception
+21:08:45.946 [main] INFO  Mapped "{[/start_temperature_process],methods=[GET]}" onto public java.lang.String ipa.RequestController.startTemperatureProcess(org.springframework.ui.Model)
+21:08:45.951 [main] INFO  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+21:08:45.952 [main] INFO  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+21:08:45.984 [main] INFO  Mapped URL path [/img/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:08:45.984 [main] INFO  Mapped URL path [/css/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:08:45.985 [main] INFO  Mapped URL path [/js/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:08:46.034 [main] INFO  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f40c25: startup date [Mon Apr 13 21:08:44 SGT 2020]; root of context hierarchy
+21:08:46.382 [main] INFO  Registering beans for JMX exposure on startup
+21:08:46.392 [main] INFO  Starting ProtocolHandler ["http-nio-8090"]
+21:08:46.406 [main] INFO  Using a shared selector for servlet write/read
+21:08:46.419 [main] INFO  Tomcat started on port(s): 8090 (http) with context path ''
+21:08:46.422 [main] INFO  Started Application in 2.291 seconds (JVM running for 2.738)
+21:08:52.217 [http-nio-8090-exec-1] INFO  Initializing Spring FrameworkServlet 'dispatcherServlet'
+21:08:52.218 [http-nio-8090-exec-1] INFO  FrameworkServlet 'dispatcherServlet': initialization started
+21:08:52.243 [http-nio-8090-exec-1] INFO  FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+21:11:30.224 [main] INFO  Starting Application v0.1.0 on DESKTOP-OPIFQEK with PID 9668 (C:\Study\IPA\ipaca-master\distributions\ipa-web-0.1.0.jar started by Francis in C:\Study\IPA\ipaca-master\distributions)
+21:11:30.228 [main] INFO  No active profile set, falling back to default profiles: default
+21:11:30.272 [main] INFO  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@18e2867: startup date [Mon Apr 13 21:11:30 SGT 2020]; root of context hierarchy
+21:11:31.464 [main] INFO  Tomcat initialized with port(s): 8090 (http)
+21:11:31.476 [main] INFO  Initializing ProtocolHandler ["http-nio-8090"]
+21:11:31.489 [main] INFO  Starting service [Tomcat]
+21:11:31.490 [main] INFO  Starting Servlet Engine: Apache Tomcat/8.5.34
+21:11:31.502 [localhost-startStop-1] INFO  The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\libnvvp;C:\Users\Francis.DESKTOP-OPIFQEK\Downloads\amazon-corretto-11.0.6.10.1-1-windows-x64-jdk\jdk11.0.6_10\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Apps\Oracle\db_home\bin;C:\Apps\Oracle\client_home\bin;C:\WINDOWS.X64_193000_client_home\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\libnvvp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.4.0\;C:\Users\Francis.DESKTOP-OPIFQEK\Downloads\amazon-corretto-11.0.6.10.1-1-windows-x64-jdk\jdk11.0.6_10\bin;C:\Open_JDK-13.0.2\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Francis.DESKTOP-OPIFQEK\AppData\Local\Microsoft\WindowsApps;C:\Apps\Oracle\db_home;C:\Users\Francis.DESKTOP-OPIFQEK\Anaconda3\bin;C:\Users\Francis.DESKTOP-OPIFQEK\Anaconda3\Scripts;C:\Users\Francis.DESKTOP-OPIFQEK\Anaconda3\Library\bin;C:\Users\Francis.DESKTOP-OPIFQEK\AppData\Roaming\Python\Python37\Scripts;C:\Users\Francis.DESKTOP-OPIFQEK\AppData\Local\GitHubDesktop\bin;.]
+21:11:31.568 [localhost-startStop-1] INFO  Initializing Spring embedded WebApplicationContext
+21:11:31.569 [localhost-startStop-1] INFO  Root WebApplicationContext: initialization completed in 1298 ms
+21:11:31.596 [localhost-startStop-1] INFO  Servlet dispatcherServlet mapped to [/]
+21:11:31.601 [localhost-startStop-1] INFO  Mapping filter: 'characterEncodingFilter' to: [/*]
+21:11:31.703 [main] INFO  Mapped "{[/show_practitioners],methods=[GET]}" onto public java.lang.String ipa.RequestController.showPractitioners(org.springframework.ui.Model) throws java.lang.Exception
+21:11:31.705 [main] INFO  Mapped "{[/start_temperature_process],methods=[GET]}" onto public java.lang.String ipa.RequestController.startTemperatureProcess(org.springframework.ui.Model)
+21:11:31.706 [main] INFO  Mapped "{[/backToMain],methods=[GET]}" onto public java.lang.String ipa.RequestController.goToMain() throws java.lang.Exception
+21:11:31.714 [main] INFO  Mapped "{[/]}" onto public java.lang.String ipa.RequestController.welcome()
+21:11:31.716 [main] INFO  Mapped "{[/submit],methods=[POST]}" onto public java.lang.String ipa.RequestController.submit11(org.springframework.ui.Model)
+21:11:31.717 [main] INFO  Mapped "{[/showResults],methods=[GET]}" onto public java.lang.String ipa.RequestController.matchingComplete(org.springframework.ui.Model) throws java.lang.Exception
+21:11:31.720 [main] INFO  Mapped "{[/start_loadingNew],methods=[GET]}" onto public java.lang.String ipa.RequestController.startLoadingNew(org.springframework.ui.Model) throws java.lang.Exception
+21:11:31.721 [main] INFO  Mapped "{[/show_patients],methods=[GET]}" onto public java.lang.String ipa.RequestController.showPatients(org.springframework.ui.Model) throws java.lang.Exception
+21:11:31.721 [main] INFO  Mapped "{[/go_to_matching],methods=[GET]}" onto public java.lang.String ipa.RequestController.goToMatching(org.springframework.ui.Model) throws java.lang.Exception
+21:11:31.722 [main] INFO  Mapped "{[/start_loading],methods=[GET]}" onto public java.lang.String ipa.RequestController.startLoading(org.springframework.ui.Model) throws java.lang.Exception
+21:11:31.723 [main] INFO  Mapped "{[/go_to_details_input],methods=[GET]}" onto public java.lang.String ipa.RequestController.goToDetailsInput(java.lang.String,org.springframework.ui.Model)
+21:11:31.724 [main] INFO  Mapped "{[/start_process],methods=[GET]}" onto public java.lang.String ipa.RequestController.startProcess(org.springframework.ui.Model)
+21:11:31.727 [main] INFO  Mapped "{[/stop_process],methods=[GET]}" onto public java.lang.String ipa.RequestController.stopProcess(org.springframework.ui.Model)
+21:11:31.728 [main] INFO  Mapped "{[/submit_employee],methods=[POST]}" onto public java.lang.String ipa.RequestController.submitEmployee(ipa.dto.EmployeeDto,org.springframework.ui.Model)
+21:11:31.736 [main] INFO  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+21:11:31.736 [main] INFO  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+21:11:31.769 [main] INFO  Mapped URL path [/img/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:11:31.769 [main] INFO  Mapped URL path [/css/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:11:31.770 [main] INFO  Mapped URL path [/js/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:11:31.817 [main] INFO  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@18e2867: startup date [Mon Apr 13 21:11:30 SGT 2020]; root of context hierarchy
+21:11:32.136 [main] INFO  Registering beans for JMX exposure on startup
+21:11:32.145 [main] INFO  Starting ProtocolHandler ["http-nio-8090"]
+21:11:32.161 [main] ERROR Failed to start connector [Connector[HTTP/1.1-8090]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8090]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at ipa.Application.main(Application.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 21 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:219)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1151)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 22 common frames omitted
+21:11:32.164 [main] INFO  Pausing ProtocolHandler ["http-nio-8090"]
+21:11:32.165 [main] INFO  Stopping service [Tomcat]
+21:11:32.191 [main] INFO  The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+21:11:32.191 [main] INFO  Stopping ProtocolHandler ["http-nio-8090"]
+21:11:32.192 [main] INFO  Destroying ProtocolHandler ["http-nio-8090"]
+21:11:32.197 [main] INFO  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+21:11:32.198 [main] ERROR 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8090 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8090, or configure this application to listen on another port.
+
+21:11:32.199 [main] INFO  Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@18e2867: startup date [Mon Apr 13 21:11:30 SGT 2020]; root of context hierarchy
+21:11:32.200 [main] INFO  Unregistering JMX-exposed beans on shutdown
+21:13:44.482 [main] INFO  Starting Application v0.1.0 on DESKTOP-OPIFQEK with PID 7816 (C:\Study\IPA\ipaca-master\distributions\ipa-web-0.1.0.jar started by Francis in C:\Study\IPA\ipaca-master\distributions)
+21:13:44.486 [main] INFO  No active profile set, falling back to default profiles: default
+21:13:44.532 [main] INFO  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f40c25: startup date [Mon Apr 13 21:13:44 SGT 2020]; root of context hierarchy
+21:13:45.720 [main] INFO  Tomcat initialized with port(s): 8090 (http)
+21:13:45.736 [main] INFO  Initializing ProtocolHandler ["http-nio-8090"]
+21:13:45.745 [main] INFO  Starting service [Tomcat]
+21:13:45.745 [main] INFO  Starting Servlet Engine: Apache Tomcat/8.5.34
+21:13:45.755 [localhost-startStop-1] INFO  The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\libnvvp;C:\Users\Francis.DESKTOP-OPIFQEK\Downloads\amazon-corretto-11.0.6.10.1-1-windows-x64-jdk\jdk11.0.6_10\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Apps\Oracle\db_home\bin;C:\Apps\Oracle\client_home\bin;C:\WINDOWS.X64_193000_client_home\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\libnvvp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.4.0\;C:\Users\Francis.DESKTOP-OPIFQEK\Downloads\amazon-corretto-11.0.6.10.1-1-windows-x64-jdk\jdk11.0.6_10\bin;C:\Open_JDK-13.0.2\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Francis.DESKTOP-OPIFQEK\AppData\Local\Microsoft\WindowsApps;C:\Apps\Oracle\db_home;C:\Users\Francis.DESKTOP-OPIFQEK\Anaconda3\bin;C:\Users\Francis.DESKTOP-OPIFQEK\Anaconda3\Scripts;C:\Users\Francis.DESKTOP-OPIFQEK\Anaconda3\Library\bin;C:\Users\Francis.DESKTOP-OPIFQEK\AppData\Roaming\Python\Python37\Scripts;C:\Users\Francis.DESKTOP-OPIFQEK\AppData\Local\GitHubDesktop\bin;.]
+21:13:45.823 [localhost-startStop-1] INFO  Initializing Spring embedded WebApplicationContext
+21:13:45.823 [localhost-startStop-1] INFO  Root WebApplicationContext: initialization completed in 1293 ms
+21:13:45.849 [localhost-startStop-1] INFO  Servlet dispatcherServlet mapped to [/]
+21:13:45.856 [localhost-startStop-1] INFO  Mapping filter: 'characterEncodingFilter' to: [/*]
+21:13:45.958 [main] INFO  Mapped "{[/backToMain],methods=[GET]}" onto public java.lang.String ipa.RequestController.goToMain() throws java.lang.Exception
+21:13:45.959 [main] INFO  Mapped "{[/submit],methods=[POST]}" onto public java.lang.String ipa.RequestController.submit11(org.springframework.ui.Model)
+21:13:45.961 [main] INFO  Mapped "{[/]}" onto public java.lang.String ipa.RequestController.welcome()
+21:13:45.963 [main] INFO  Mapped "{[/start_loadingNew],methods=[GET]}" onto public java.lang.String ipa.RequestController.startLoadingNew(org.springframework.ui.Model) throws java.lang.Exception
+21:13:45.964 [main] INFO  Mapped "{[/show_patients],methods=[GET]}" onto public java.lang.String ipa.RequestController.showPatients(org.springframework.ui.Model) throws java.lang.Exception
+21:13:45.964 [main] INFO  Mapped "{[/start_loading],methods=[GET]}" onto public java.lang.String ipa.RequestController.startLoading(org.springframework.ui.Model) throws java.lang.Exception
+21:13:45.964 [main] INFO  Mapped "{[/go_to_matching],methods=[GET]}" onto public java.lang.String ipa.RequestController.goToMatching(org.springframework.ui.Model) throws java.lang.Exception
+21:13:45.965 [main] INFO  Mapped "{[/submit_employee],methods=[POST]}" onto public java.lang.String ipa.RequestController.submitEmployee(ipa.dto.EmployeeDto,org.springframework.ui.Model)
+21:13:45.965 [main] INFO  Mapped "{[/start_process],methods=[GET]}" onto public java.lang.String ipa.RequestController.startProcess(org.springframework.ui.Model)
+21:13:45.966 [main] INFO  Mapped "{[/stop_process],methods=[GET]}" onto public java.lang.String ipa.RequestController.stopProcess(org.springframework.ui.Model)
+21:13:45.967 [main] INFO  Mapped "{[/showResults],methods=[GET]}" onto public java.lang.String ipa.RequestController.matchingComplete(org.springframework.ui.Model) throws java.lang.Exception
+21:13:45.968 [main] INFO  Mapped "{[/go_to_details_input],methods=[GET]}" onto public java.lang.String ipa.RequestController.goToDetailsInput(java.lang.String,org.springframework.ui.Model)
+21:13:45.970 [main] INFO  Mapped "{[/show_practitioners],methods=[GET]}" onto public java.lang.String ipa.RequestController.showPractitioners(org.springframework.ui.Model) throws java.lang.Exception
+21:13:45.970 [main] INFO  Mapped "{[/start_temperature_process],methods=[GET]}" onto public java.lang.String ipa.RequestController.startTemperatureProcess(org.springframework.ui.Model)
+21:13:45.976 [main] INFO  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+21:13:45.977 [main] INFO  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+21:13:46.007 [main] INFO  Mapped URL path [/img/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:13:46.008 [main] INFO  Mapped URL path [/css/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:13:46.009 [main] INFO  Mapped URL path [/js/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:13:46.060 [main] INFO  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f40c25: startup date [Mon Apr 13 21:13:44 SGT 2020]; root of context hierarchy
+21:13:46.376 [main] INFO  Registering beans for JMX exposure on startup
+21:13:46.388 [main] INFO  Starting ProtocolHandler ["http-nio-8090"]
+21:13:46.402 [main] INFO  Using a shared selector for servlet write/read
+21:13:46.420 [main] INFO  Tomcat started on port(s): 8090 (http) with context path ''
+21:13:46.424 [main] INFO  Started Application in 2.227 seconds (JVM running for 2.679)
+21:13:57.094 [http-nio-8090-exec-1] INFO  Initializing Spring FrameworkServlet 'dispatcherServlet'
+21:13:57.095 [http-nio-8090-exec-1] INFO  FrameworkServlet 'dispatcherServlet': initialization started
+21:13:57.116 [http-nio-8090-exec-1] INFO  FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+21:20:19.377 [main] INFO  Starting Application v0.1.0 on DESKTOP-OPIFQEK with PID 22412 (C:\Study\IPA\ipaca-master\distributions\ipa-web-0.1.0.jar started by Francis in C:\Study\IPA\ipaca-master\distributions)
+21:20:19.381 [main] INFO  No active profile set, falling back to default profiles: default
+21:20:19.423 [main] INFO  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@da9e37: startup date [Mon Apr 13 21:20:19 SGT 2020]; root of context hierarchy
+21:20:20.617 [main] INFO  Tomcat initialized with port(s): 8090 (http)
+21:20:20.630 [main] INFO  Initializing ProtocolHandler ["http-nio-8090"]
+21:20:20.641 [main] INFO  Starting service [Tomcat]
+21:20:20.641 [main] INFO  Starting Servlet Engine: Apache Tomcat/8.5.34
+21:20:20.649 [localhost-startStop-1] INFO  The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\libnvvp;C:\Users\Francis.DESKTOP-OPIFQEK\Downloads\amazon-corretto-11.0.6.10.1-1-windows-x64-jdk\jdk11.0.6_10\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Apps\Oracle\db_home\bin;C:\Apps\Oracle\client_home\bin;C:\WINDOWS.X64_193000_client_home\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\libnvvp;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.4.0\;C:\Users\Francis.DESKTOP-OPIFQEK\Downloads\amazon-corretto-11.0.6.10.1-1-windows-x64-jdk\jdk11.0.6_10\bin;C:\Open_JDK-13.0.2\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Francis.DESKTOP-OPIFQEK\AppData\Local\Microsoft\WindowsApps;C:\Apps\Oracle\db_home;C:\Users\Francis.DESKTOP-OPIFQEK\Anaconda3\bin;C:\Users\Francis.DESKTOP-OPIFQEK\Anaconda3\Scripts;C:\Users\Francis.DESKTOP-OPIFQEK\Anaconda3\Library\bin;C:\Users\Francis.DESKTOP-OPIFQEK\AppData\Roaming\Python\Python37\Scripts;C:\Users\Francis.DESKTOP-OPIFQEK\AppData\Local\GitHubDesktop\bin;.]
+21:20:20.716 [localhost-startStop-1] INFO  Initializing Spring embedded WebApplicationContext
+21:20:20.716 [localhost-startStop-1] INFO  Root WebApplicationContext: initialization completed in 1295 ms
+21:20:20.744 [localhost-startStop-1] INFO  Servlet dispatcherServlet mapped to [/]
+21:20:20.748 [localhost-startStop-1] INFO  Mapping filter: 'characterEncodingFilter' to: [/*]
+21:20:20.852 [main] INFO  Mapped "{[/start_temperature_process],methods=[GET]}" onto public java.lang.String ipa.RequestController.startTemperatureProcess(org.springframework.ui.Model)
+21:20:20.852 [main] INFO  Mapped "{[/show_practitioners],methods=[GET]}" onto public java.lang.String ipa.RequestController.showPractitioners(org.springframework.ui.Model) throws java.lang.Exception
+21:20:20.853 [main] INFO  Mapped "{[/go_to_matching],methods=[GET]}" onto public java.lang.String ipa.RequestController.goToMatching(org.springframework.ui.Model) throws java.lang.Exception
+21:20:20.856 [main] INFO  Mapped "{[/showResults],methods=[GET]}" onto public java.lang.String ipa.RequestController.matchingComplete(org.springframework.ui.Model) throws java.lang.Exception
+21:20:20.856 [main] INFO  Mapped "{[/start_loadingNew],methods=[GET]}" onto public java.lang.String ipa.RequestController.startLoadingNew(org.springframework.ui.Model) throws java.lang.Exception
+21:20:20.856 [main] INFO  Mapped "{[/show_patients],methods=[GET]}" onto public java.lang.String ipa.RequestController.showPatients(org.springframework.ui.Model) throws java.lang.Exception
+21:20:20.856 [main] INFO  Mapped "{[/start_loading],methods=[GET]}" onto public java.lang.String ipa.RequestController.startLoading(org.springframework.ui.Model) throws java.lang.Exception
+21:20:20.858 [main] INFO  Mapped "{[/start_process],methods=[GET]}" onto public java.lang.String ipa.RequestController.startProcess(org.springframework.ui.Model)
+21:20:20.858 [main] INFO  Mapped "{[/submit_employee],methods=[POST]}" onto public java.lang.String ipa.RequestController.submitEmployee(ipa.dto.EmployeeDto,org.springframework.ui.Model)
+21:20:20.858 [main] INFO  Mapped "{[/stop_process],methods=[GET]}" onto public java.lang.String ipa.RequestController.stopProcess(org.springframework.ui.Model)
+21:20:20.858 [main] INFO  Mapped "{[/go_to_details_input],methods=[GET]}" onto public java.lang.String ipa.RequestController.goToDetailsInput(java.lang.String,org.springframework.ui.Model)
+21:20:20.859 [main] INFO  Mapped "{[/]}" onto public java.lang.String ipa.RequestController.welcome()
+21:20:20.861 [main] INFO  Mapped "{[/submit],methods=[POST]}" onto public java.lang.String ipa.RequestController.submit11(org.springframework.ui.Model)
+21:20:20.861 [main] INFO  Mapped "{[/backToMain],methods=[GET]}" onto public java.lang.String ipa.RequestController.goToMain() throws java.lang.Exception
+21:20:20.867 [main] INFO  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+21:20:20.867 [main] INFO  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+21:20:20.902 [main] INFO  Mapped URL path [/img/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:20:20.903 [main] INFO  Mapped URL path [/css/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:20:20.904 [main] INFO  Mapped URL path [/js/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21:20:20.953 [main] INFO  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@da9e37: startup date [Mon Apr 13 21:20:19 SGT 2020]; root of context hierarchy
+21:20:21.265 [main] INFO  Registering beans for JMX exposure on startup
+21:20:21.274 [main] INFO  Starting ProtocolHandler ["http-nio-8090"]
+21:20:21.290 [main] INFO  Using a shared selector for servlet write/read
+21:20:21.304 [main] INFO  Tomcat started on port(s): 8090 (http) with context path ''
+21:20:21.306 [main] INFO  Started Application in 2.221 seconds (JVM running for 2.686)
+21:20:28.471 [http-nio-8090-exec-1] INFO  Initializing Spring FrameworkServlet 'dispatcherServlet'
+21:20:28.472 [http-nio-8090-exec-1] INFO  FrameworkServlet 'dispatcherServlet': initialization started
+21:20:28.497 [http-nio-8090-exec-1] INFO  FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
