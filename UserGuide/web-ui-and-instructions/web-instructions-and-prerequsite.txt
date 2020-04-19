@@ -1,0 +1,46 @@
+
+Prerequisites to run ipa-web
+
+1. need java8/JRE8 to be installed
+
+2. make sure the java/JRE has been added in path env variable(by default, it is there).
+
+3. Make sure UiPath is installed so that user is able to trigger the "start process" properly.
+
+
+Files needed:
+
+1. config.properties, config file for the UiPath and processes which will be closed during stop processes
+
+1.1 uiRobot_path, this need to be updated to user local installation path, like below:
+C:/Users/AppData/Local/UiPath/app-19.12.0-beta0061/UiRobot.exe
+
+1.2 temperature_uiPath_file, this need to be updated to sequence.xaml in current project, like below:
+C:/Users/Temperature_Checks_for_SMEs/executables/executables/Sequence.xaml
+
+1.3 process_list, while user click "stop process", processes configured here will be closed, like WindowsCamera, UiRobot etc.
+The process name might be different due to different machine, so use need to configure this manually, otherwise will have to stop process manually.
+
+2. employee.csv, includes the employee details input from WebUI.
+
+3. known_people, when user upload the employee photo, it will be added into this folder.
+
+
+How to start ipa-web
+
+1. go to the ipa-web jar file folder and update the config.properties to reflect the correct file path.
+For the use of each prop, please refer to above config.properties introction
+
+2. go the the command window and cd to the folder which contains the ipa-web-0.1.0.jar.
+
+E.g cd C:\code_repo\Temperature_Checks_for_SMEs\executables\
+
+3. execute below command, and there will be output generated.
+
+java -jar ipa-web-0.1.0.jar
+
+4. Until see following outputs, it means web server started successfully.
+
+"Root WebApplicationContext: initialization completed in 2832 ms"
+
+5. open any browser and access URL "http://localhost:8090/"
