@@ -37,7 +37,7 @@
       <Literal x:TypeArguments="x:String" Value="" />
     </InArgument>
   </this:InformStatus.user_in_detect_time>
-  <sap:VirtualizedContainerService.HintSize>1236,2690.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>544.8,571.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -86,7 +86,7 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Email Module" sap:VirtualizedContainerService.HintSize="1246.4,2625.6" sap2010:WorkflowViewState.IdRef="Sequence_14">
+  <Sequence DisplayName="Email Module" sap:VirtualizedContainerService.HintSize="524.8,511.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="email_config" />
     </Sequence.Variables>
@@ -96,7 +96,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="1204.8,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="483.2,60" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="sd:DataTable">[email_config]</OutArgument>
       </Assign.To>
@@ -104,7 +104,7 @@
         <InArgument x:TypeArguments="sd:DataTable">[email_in_out_config]</InArgument>
       </Assign.Value>
     </Assign>
-    <If Condition="[user_in_blacklist or user_in_symptom]" DisplayName="Handle Email" sap:VirtualizedContainerService.HintSize="1062.4,1721.6" sap2010:WorkflowViewState.IdRef="If_3">
+    <If Condition="[user_in_blacklist or user_in_symptom]" DisplayName="Handle Email" sap:VirtualizedContainerService.HintSize="483.2,218.4" sap2010:WorkflowViewState.IdRef="If_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -112,7 +112,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence DisplayName="Handle Email" sap:VirtualizedContainerService.HintSize="789.6,1572" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence DisplayName="Handle Email" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="email_sender_account" />
             <Variable x:TypeArguments="x:String" Name="email_sender_pwd" />
@@ -131,11 +131,11 @@
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:MultipleAssign DisplayName="Import Email Config From Last Read" sap:VirtualizedContainerService.HintSize="748,130.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_14">
+          <ui:MultipleAssign DisplayName="Import Email Config From Last Read" sap:VirtualizedContainerService.HintSize="789.6,130.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_14">
             <ui:MultipleAssign.AssignOperations>
               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_33">
@@ -157,7 +157,7 @@
               </scg:List>
             </ui:MultipleAssign.AssignOperations>
           </ui:MultipleAssign>
-          <If Condition="[IsNothing(email_config) or IsNothing(email_templates)]" DisplayName="Read Email Config" sap:VirtualizedContainerService.HintSize="748,52.8" sap2010:WorkflowViewState.IdRef="If_5">
+          <If Condition="[IsNothing(email_config) or IsNothing(email_templates)]" DisplayName="Read Email Config" sap:VirtualizedContainerService.HintSize="789.6,52.8" sap2010:WorkflowViewState.IdRef="If_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -232,7 +232,7 @@
               <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="228.8,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="Email config alreay read" />
             </If.Else>
           </If>
-          <ui:MultipleAssign DisplayName="Export Email Config for reuse at next time" sap:VirtualizedContainerService.HintSize="748,130.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_15">
+          <ui:MultipleAssign DisplayName="Export Email Config for reuse at next time" sap:VirtualizedContainerService.HintSize="789.6,130.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_15">
             <ui:MultipleAssign.AssignOperations>
               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_35">
@@ -254,14 +254,14 @@
               </scg:List>
             </ui:MultipleAssign.AssignOperations>
           </ui:MultipleAssign>
-          <Sequence DisplayName="Setup Email Config" sap:VirtualizedContainerService.HintSize="748,443.2" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <Sequence DisplayName="Setup Email Config" sap:VirtualizedContainerService.HintSize="789.6,443.2" sap2010:WorkflowViewState.IdRef="Sequence_17">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[email_config]" DisplayName="For Each Row on Config" sap:VirtualizedContainerService.HintSize="228.8,52.8" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[email_config]" DisplayName="For Each Row on Config" sap:VirtualizedContainerService.HintSize="229.6,52.8" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
@@ -416,8 +416,8 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ForEachRow>
-            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="228.8,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_12" Text="Completed to read email config rows" />
-            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[email_templates]" DisplayName="For Each Row on Templates" sap:VirtualizedContainerService.HintSize="228.8,52.8" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_12" Text="Completed to read email config rows" />
+            <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[email_templates]" DisplayName="For Each Row on Templates" sap:VirtualizedContainerService.HintSize="229.6,52.8" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
@@ -503,9 +503,9 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ForEachRow>
-            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="228.8,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_13" Text="Completed to read email templates rows" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_13" Text="Completed to read email templates rows" />
           </Sequence>
-          <TryCatch DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="748,562.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+          <TryCatch DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="789.6,805.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -513,14 +513,14 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <TryCatch.Try>
-              <Sequence DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="241.6,331.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <Sequence DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="752.8,574.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:MultipleAssign DisplayName="Setup Email Out Status" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
+                <ui:MultipleAssign DisplayName="Setup Email Out Status" sap:VirtualizedContainerService.HintSize="711.2,52.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
                   <ui:MultipleAssign.AssignOperations>
                     <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                       <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_14">
@@ -550,45 +550,41 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:MultipleAssign>
-                <If Condition="[user_in_blacklist]" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="If_4">
+                <If Condition="[user_in_blacklist]" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="711.2,296" sap2010:WorkflowViewState.IdRef="If_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <If.Then>
-                    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" TimeoutMS="{x:Null}" Body="[email_blacklist_body.replace(&quot;{user_name}&quot;, user_in_name).Replace(&quot;{detection_time}&quot;, user_in_detect_time)]" DisplayName="Send DeptMgr Email for Blacklist" Email="[email_sender_account]" EnableSSL="True" From="[email_sender_account]" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="SendMail_3" IsBodyHtml="False" Name="[email_sender_name]" Password="[email_sender_pwd]" Port="[email_server_port]" SecureConnection="SslOnConnect" Server="[email_server_address]" Subject="[email_blacklist_title.Replace(&quot;{user_name}&quot;, user_in_name)]" To="[email_deptMgr_address]">
+                    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" TimeoutMS="{x:Null}" Body="[email_blacklist_body.replace(&quot;{user_name}&quot;, user_in_name).Replace(&quot;{reason}&quot;, user_in_blacklist_reason)]" DisplayName="Send DeptMgr Email for Blacklist" Email="[email_sender_account]" EnableSSL="True" From="[email_sender_account]" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_3" IsBodyHtml="False" Name="[email_sender_name]" Password="[email_sender_pwd]" Port="[email_server_port]" SecureConnection="SslOnConnect" Server="[email_server_address]" Subject="[email_blacklist_title.Replace(&quot;{user_name}&quot;, user_in_name)]" To="[email_deptMgr_address]">
                       <ui:SendMail.Files>
-                        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                          <InArgument x:TypeArguments="x:String">[user_in_attach_path]</InArgument>
-                        </scg:List>
+                        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
                       </ui:SendMail.Files>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:SendMail>
                   </If.Then>
                   <If.Else>
-                    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" TimeoutMS="{x:Null}" Body="[email_symptoms_body.Replace(&quot;{user_name}&quot;, user_in_name).Replace(&quot;{symptoms}&quot;, user_in_symptom_list).Replace(&quot;{detection_time}&quot;, user_in_detect_time)]" DisplayName="Send DeptMgr Email for Symptom" Email="[email_sender_account]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="SendMail_4" IsBodyHtml="False" Password="[email_sender_pwd]" Port="[email_server_port]" SecureConnection="Auto" Server="[email_server_address]" Subject="[email_symptoms_title.Replace(&quot;{user_name}&quot;, user_in_name).Replace(&quot;{symptoms}&quot;, user_in_symptom_list)]" To="[email_deptMgr_address]">
+                    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" TimeoutMS="{x:Null}" Body="[email_symptoms_body.Replace(&quot;{user_name}&quot;, user_in_name).Replace(&quot;{symptoms}&quot;, user_in_symptom_list).Replace(&quot;{detection_time}&quot;, user_in_detect_time)]" DisplayName="Send DeptMgr Email for Symptom" Email="[email_sender_account]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_4" IsBodyHtml="False" Password="[email_sender_pwd]" Port="[email_server_port]" SecureConnection="Auto" Server="[email_server_address]" Subject="[email_symptoms_title.Replace(&quot;{user_name}&quot;, user_in_name).Replace(&quot;{symptoms}&quot;, user_in_symptom_list)]" To="[email_deptMgr_address]">
                       <ui:SendMail.Files>
-                        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                          <InArgument x:TypeArguments="x:String">[user_in_attach_path]</InArgument>
-                        </scg:List>
+                        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
                       </ui:SendMail.Files>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:SendMail>
                   </If.Else>
                 </If>
-                <ui:MultipleAssign DisplayName="Setup Success Email Status" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
+                <ui:MultipleAssign DisplayName="Setup Success Email Status" sap:VirtualizedContainerService.HintSize="711.2,52.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
                   <ui:MultipleAssign.AssignOperations>
                     <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                       <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_16">
@@ -619,7 +615,7 @@
               </Sequence>
             </TryCatch.Try>
             <TryCatch.Catches>
-              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="756,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -662,10 +658,10 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="228.8,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="No email to be sent" />
+        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="No email to be sent" />
       </If.Else>
     </If>
-    <Assign sap:VirtualizedContainerService.HintSize="1204.8,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign sap:VirtualizedContainerService.HintSize="483.2,60" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="sd:DataTable">[email_in_out_config]</OutArgument>
       </Assign.To>

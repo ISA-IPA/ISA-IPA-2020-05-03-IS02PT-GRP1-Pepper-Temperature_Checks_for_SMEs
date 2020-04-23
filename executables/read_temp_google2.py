@@ -13,7 +13,7 @@ import face_recognition
 import numpy as np
 import glob
 
-Google_AUTH_KEY = r'iss-ipa66-57b2c4a008f2.json'
+Google_AUTH_KEY = r'NUS-ISS-Pepper101-f04179848078.json'
 
 TEMP_REG_PATTERN = re.compile(r'^[2345]\d\.?\d$')
 
@@ -64,14 +64,12 @@ def main(argv):
     outfile.close()
     ###############################################################################
     #initialize alert file
-    inf0=open("alert_initial.csv","r")
-    inf0.readline()
-    outf0=open("alert.csv","w+")
-    outf0.write("Name,Alert,Temperature\n")
-    for line in inf0.readlines():
-        outf0.write(line)
-    outf0.close()
-    inf0.close()
+    with open("alert_initial.csv","r") as inf0:
+        inf0.readline()
+        with open("alert.csv","w+") as outf0:
+            outf0.write("Name,Alert,Temperature\n")
+            for line in inf0.readlines():
+                outf0.write(line)
     time.sleep(0.01)
     
     inf99=open("stop.csv","w+")
@@ -242,10 +240,13 @@ def main(argv):
                 temp = 99
                 print("Please Stay Where You Are - Someone Will Come Over.")
                 ter+="2,%s\n" % temp
+                #outf.write("Name,Alert,Temperature\n")
+                
                 outf.write(ter)
             #######################################################################
             
             #capturing temperature
+            
             if key & 0xFF == ord('q'):
                 capture_temp = False
                 alog.info("Stopped")
@@ -263,10 +264,20 @@ def main(argv):
                     #cv2.imwrite("frames/frame_%d.jpg" % time_laped, image)
                     alog.info(f"Found temperature: '{temp_read}'")
             
-            if temp_read<=0: continue
+            if temp_read<=0: 
+                inf.close()
+                outf.close()
+                time.sleep(0.1)
+                os.popen("copy alert.csv alert_bk.csv")
+                
+                
+                continue
             temp=temp_read
+            
+            #temp=40
             ##########################################################################
             #temperature record
+            print("temp_record")
             if bufl in blacklist:
                 temp = 99        
             elif temp>=38:
