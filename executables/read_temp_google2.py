@@ -13,7 +13,8 @@ import face_recognition
 import numpy as np
 import glob
 
-Google_AUTH_KEY = r'NUS-ISS-Pepper101-f04179848078.json'
+#Google_AUTH_KEY = r'NUS-ISS-Pepper101-f04179848078.json'
+Google_AUTH_KEY =  r'ipa-group-project-4a4e69d12770.json'
 
 TEMP_REG_PATTERN = re.compile(r'^[2345]\d\.?\d$')
 
@@ -138,7 +139,7 @@ def main(argv):
                 # Find all the faces and face encodings in the current frame of video
                 face_locations = face_recognition.face_locations(rgb_small_frame, number_of_times_to_upsample=2, model='hog') # For GPU, use model='cnn'
                 face_encodings = face_recognition.face_encodings(rgb_small_frame, face_locations, num_jitters=2)
-                print(face_encodings)
+                # print(face_encodings)
         
                 face_names = []
                 for face_encoding in face_encodings:
@@ -241,7 +242,7 @@ def main(argv):
                 print("Please Stay Where You Are - Someone Will Come Over.")
                 ter+="2,%s\n" % temp
                 #outf.write("Name,Alert,Temperature\n")
-                
+
                 outf.write(ter)
             #######################################################################
             
@@ -260,6 +261,7 @@ def main(argv):
                     #cv2.imwrite("frames/frame_%d.jpg" % time_laped, image)
             else:
                 temp_read = read_temp_from_image(image, client)
+                print("temp_read==============", temp_read)
                 if temp_read > 0:
                     #cv2.imwrite("frames/frame_%d.jpg" % time_laped, image)
                     alog.info(f"Found temperature: '{temp_read}'")
@@ -273,7 +275,7 @@ def main(argv):
                 
                 continue
             temp=temp_read
-            
+
             #temp=40
             ##########################################################################
             #temperature record
@@ -282,8 +284,24 @@ def main(argv):
                 temp = 99        
             elif temp>=38:
                 ter+="1,%s\n" % temp
+
+                employee_name = bufl.strip()
+                print("employee_name=======", employee_name)
+                if len(employee_name) > 0:
+                    current_employee_file = open("current_employee.csv", "w")
+                    current_employee_file.write("Name,Temperature,Time\n")
+                    current_employee_file.write(bufl + "," + str(temp) + "," + str(int( time.time() )) + "\n")
+                    current_employee_file.close()
             else:
                 ter+="99999,%s\n" % temp
+                employee_name = bufl.strip()
+                print("employee_name=======", employee_name)
+                if len(employee_name) > 0:
+                    current_employee_file = open("current_employee.csv", "w")
+                    current_employee_file.write("Name,Temperature,Time\n")
+                    current_employee_file.write(bufl + "," + str(temp) + "," + str(int( time.time() )) + "\n")
+                    current_employee_file.close()
+
             outf.write(ter)
             for line in inf.readlines():
                 line=line.replace("\n","")
