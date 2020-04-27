@@ -38,6 +38,14 @@ We leveraged tools like UIPath, Python, Google Cloud, the Spring Boot etc to put
 
 ### [ 1 ] To run the system in windows or iss-vm
 
+> Prerequisites to run python codes:
+
+> 1. Python3 and Anaconda are need to be installed with an env named “ml1P13”. 
+
+> 2. requirements.txt includes all the dependencies for this project. 
+
+> 3. In the executable folder, all the files are needed during python code runtime. 
+
 > Prerequisites to run ipa-web
 
 > 1.	Need java8/JRE8 to be installed.
