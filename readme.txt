@@ -16,7 +16,7 @@ We leveraged tools like UIPath, Python, Google Cloud, the Spring Boot etc to put
 ## SECTION 3 : CREDITS / PROJECT CONTRIBUTION
 
 
-| Official Full Name   | StudentID | Email                     | Work Items (Who Did What)                                                                                                  
+| Official Full Name   | StudentID | Email              | Work Items (Who Did What)                                                                                                  
 
 | CAO LIANG            | A0012884E | e0384184@u.nus.edu | Email module, thermometer reading, architecture diagram, help with integration
 | GENG LIANGYU         | A0195278M | e0384909@u.nus.edu | Web GUI, Final Integration, Troubleshooting, Test, Packaging, QA 
