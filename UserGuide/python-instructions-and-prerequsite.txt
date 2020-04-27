@@ -1,0 +1,8 @@
+
+Prerequisites to run python file:
+
+1. Python3 and Anaconda are need to be installed with an env named “ml1P13”. 
+
+2. requirements.txt includes all the dependencies for this project. 
+
+3. In the executable folder, all the files are needed during runtime. 
