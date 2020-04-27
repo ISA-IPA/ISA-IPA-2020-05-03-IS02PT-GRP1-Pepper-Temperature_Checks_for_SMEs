@@ -1,7 +1,7 @@
 ## SECTION 1 : PROJECT TITLE
 ## Temperature Checks for SMEs
 
-<img src="bk/Banner.gif"
+<img src="bk/IPA.JPG"
      style="float: left; margin-right: 0px;" />
 
 ---
