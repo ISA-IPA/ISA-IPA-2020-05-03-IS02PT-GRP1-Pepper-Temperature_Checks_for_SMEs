@@ -16,13 +16,15 @@ We leveraged tools like UIPath, Python, Google Cloud, the Spring Boot etc to put
 ## SECTION 3 : CREDITS / PROJECT CONTRIBUTION
 
 
-| Official Full Name   | StudentID | Email              | Work Items (Who Did What)                                                                                                  
+| Official Full Name   | StudentID | Email              | Work Items (Who Did What) |                                             
+| :------------ |:---------------:| :-----| :-----|
+| CAO LIANG            | A0012884E | e0384184@u.nus.edu | Email module, thermometer reading, architecture diagram, help with integration | 
+| GENG LIANGYU         | A0195278M | e0384909@u.nus.edu | Web GUI, Final Integration, Troubleshooting, Test, Packaging, QA  | 
+| HAN DONGCHOU FRANCIS | A0195414A | e0385045@u.nus.edu | Leading, Requirements and Design, Integration, Reviews, SIT tests  | 
+| ONG BOON PING        | A0195172B | e0384803@u.nus.edu | UIPath, face recognition program and Integration with Temperature Reading      | 
+| TAN CHIN GEE         | A0195296M | e0384927@u.nus.edu | initial coding of face_recognition.py, report, video, aruco_detect.py |
 
-| CAO LIANG            | A0012884E | e0384184@u.nus.edu | Email module, thermometer reading, architecture diagram, help with integration
-| GENG LIANGYU         | A0195278M | e0384909@u.nus.edu | Web GUI, Final Integration, Troubleshooting, Test, Packaging, QA 
-| HAN DONGCHOU FRANCIS | A0195414A | e0385045@u.nus.edu | Leading, Requirements and Design, Integration, Reviews, SIT tests 
-| ONG BOON PING        | A0195172B | e0384803@u.nus.edu | UIPath, face recognition program and Integration with Temperature Reading                          
-| TAN CHIN GEE         | A0195296M | e0384927@u.nus.edu | initial coding of face_recognition.py, report, video, aruco_detect.py   		             
+
 ---
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
 
