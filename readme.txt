@@ -1,12 +1,12 @@
 ## SECTION 1 : PROJECT TITLE
 ## Temperature Checks for SMEs
 
-<img src="./Banner.gif"
+<img src="Banner.gif"
      style="float: left; margin-right: 0px;" />
 
 ---
 ## SECTION 2 : EXECUTIVE SUMMARY / PAPER ABSTRACT
-When the Circuit Breaker ends and companies start resuming their operation, they will be facing an added task of making sure that employees who have fever don’t turn up for work, and to follow some procedures to handle employees who are now well, and also those who are supposed to be isolated.
+When the Circuit Breaker ends and companies start resuming their operation, they will be facing an added task of making sure that employees who have fever donâ€™t turn up for work, and to follow some procedures to handle employees who are now well, and also those who are supposed to be isolated.
 In order for companies to determine if employees are sick, one way is to measure their temperature. But not all of them can afford thermal scanners. Also, there would be a lot of administrative work to try to record temperatures for the employees, to identify each one, and to record these employees and their corresponding temperatures in the system.
 Hence, we have come up with a low cost system to automate all these processes so that companies can carry out the screening process with minimal manpower and hassle.
 This project is meant for SMEs and companies that cannot afford to pay too much to set up the infrastructure to screen employees.
@@ -16,10 +16,10 @@ We leveraged tools like UIPath, Python, Google Cloud, the Spring Boot etc to put
 ## SECTION 3 : CREDITS / PROJECT CONTRIBUTION
 
 
-| Official Full Name  | Student ID (MTech Applicable)  | Work Items (Who Did What) | Email (Optional) |
-| :------------ |:---------------:| :-----| :-----|
+| Official Full Name   | StudentID | Work Items (Who Did What)                                                                                                       | Email (Optional) |
+
 | CAO LIANG            | A0012884E | Email module, thermometer reading module, system architecture diagram, help with integration	   			| e0384184@u.nus.edu |
-| GENG LIANGYU         | A0195278M | Web GUI, Final Integration, Troubleshooting, Test and Packaging, Making sure everything is working                      | e0384909@u.nus.edu |
+| GENG LIANGYU         | A0195278M | Web GUI, Final Integration, Troubleshooting, Test and Packaging, Getting everything to work                      | e0384909@u.nus.edu |
 | HAN DONGCHOU FRANCIS | A0195414A | Leading and formalizing project requirements, first of integration, SIT tests and troubleshooting                       | e0385045@u.nus.edu |
 | ONG BOON PING        | A0195172B | UIPath, face recognition program, Integration of face recognition, Text Recognition and UIPath                          | e0384803@u.nus.edu |
 | TAN CHIN GEE         | A0195296M | initial coding of face_recognition.py, project report and video, coding of aruco_detect.py   		             | e0384927@u.nus.edu |
