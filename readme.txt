@@ -16,15 +16,13 @@ We leveraged tools like UIPath, Python, Google Cloud, the Spring Boot etc to put
 ## SECTION 3 : CREDITS / PROJECT CONTRIBUTION
 
 
-| Official Full Name   | StudentID | Work Items (Who Did What)                                                                                                       | Email (Optional) |
+| Official Full Name   | StudentID | Email                     | Work Items (Who Did What)                                                                                                  
 
-| CAO LIANG            | A0012884E | Email module, thermometer reading module, system architecture diagram, help with integration	   			| e0384184@u.nus.edu |
-| GENG LIANGYU         | A0195278M | Web GUI, Final Integration, Troubleshooting, Test and Packaging, Getting everything to work                      | e0384909@u.nus.edu |
-| HAN DONGCHOU FRANCIS | A0195414A | Leading and formalizing project requirements, first of integration, SIT tests and troubleshooting                       | e0385045@u.nus.edu |
-| ONG BOON PING        | A0195172B | UIPath, face recognition program, Integration of face recognition, Text Recognition and UIPath                          | e0384803@u.nus.edu |
-| TAN CHIN GEE         | A0195296M | initial coding of face_recognition.py, project report and video, coding of aruco_detect.py   		             | e0384927@u.nus.edu |
-
-
+| CAO LIANG            | A0012884E | e0384184@u.nus.edu | Email module, thermometer reading, architecture diagram, help with integration
+| GENG LIANGYU         | A0195278M | e0384909@u.nus.edu | Web GUI, Final Integration, Troubleshooting, Test, Packaging, QA 
+| HAN DONGCHOU FRANCIS | A0195414A | e0385045@u.nus.edu | Leading, Requirements and Design, Integration, Reviews, SIT tests 
+| ONG BOON PING        | A0195172B | e0384803@u.nus.edu | UIPath, face recognition program and Integration with Temperature Reading                          
+| TAN CHIN GEE         | A0195296M | e0384927@u.nus.edu | initial coding of face_recognition.py, report, video, aruco_detect.py   		             
 ---
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
 
